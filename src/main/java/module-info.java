@@ -1,4 +1,4 @@
-module de.kozdemir.agenda {
+module de.kozdemir.javaFXAgenda {
     requires javafx.controls;
     requires javafx.fxml;
 	requires javafx.base;
