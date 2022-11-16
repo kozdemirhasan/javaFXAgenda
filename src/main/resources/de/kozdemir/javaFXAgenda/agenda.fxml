@@ -25,7 +25,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.kozdemir.javaFXAgenda.controller.AgendaController">
+<VBox prefHeight="420.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.kozdemir.javaFXAgenda.controller.AgendaController">
   <children>
     <MenuBar prefWidth="676.0" VBox.vgrow="NEVER">
       <menus>
@@ -74,8 +74,8 @@
                      <children>
                         <TableView fx:id="tablePersons" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <columns>
-                            <TableColumn fx:id="spalteVorname" prefWidth="107.0" text="Vorname" />
-                            <TableColumn fx:id="spalteNachname" prefWidth="105.0" text="Nachname" />
+                            <TableColumn fx:id="spalteVorname" prefWidth="111.0" text="Vorname" />
+                            <TableColumn fx:id="spalteNachname" prefWidth="171.0" text="Nachname" />
                           </columns>
                            <columnResizePolicy>
                               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
@@ -93,15 +93,15 @@
                                        <children>
                                           <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                              <children>
-                                                <Label text="Person Details">
+                                                <Label text="Person Details" textFill="#722727">
                                                    <font>
-                                                      <Font name="System Bold" size="22.0" />
+                                                      <Font name="Gabriola" size="22.0" />
                                                    </font>
                                                    <VBox.margin>
                                                       <Insets bottom="15.0" left="20.0" top="10.0" />
                                                    </VBox.margin>
                                                 </Label>
-                                                <GridPane>
+                                                <GridPane stylesheets="@../style/NewFile.css">
                                                   <columnConstraints>
                                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="80.0" prefWidth="112.0" />
                                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="272.0" minWidth="10.0" prefWidth="253.0" />
@@ -138,24 +138,24 @@
                                                       <Insets bottom="20.0" left="20.0" right="20.0" />
                                                    </VBox.margin>
                                                 </GridPane>
-                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../style/NewFile.css">
                                                    <children>
-                                                      <Button fx:id="btnNew" mnemonicParsing="false" onAction="#btnNewAction" text="Neu">
+                                                      <Button fx:id="btnNew" mnemonicParsing="false" onAction="#btnNewAction" prefHeight="25.0" prefWidth="80.0" styleClass="glass-grey" stylesheets="@../style/NewFile.css" text="Neu">
                                                          <HBox.margin>
                                                             <Insets left="10.0" />
                                                          </HBox.margin>
                                                       </Button>
-                                                      <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnNewPersonAdd" text="Hinzufügen">
+                                                      <Button fx:id="btnAdd" mnemonicParsing="false" onAction="#btnNewPersonAdd" prefHeight="25.0" prefWidth="80.0" styleClass="glass-grey" stylesheets="@../style/NewFile.css" text="Hinzufügen">
                                                          <HBox.margin>
                                                             <Insets left="10.0" />
                                                          </HBox.margin>
                                                       </Button>
-                                                      <Button fx:id="btnBearbeiten" mnemonicParsing="false" onAction="#btnBearbeitenAction" text="Bearbeiten">
+                                                      <Button fx:id="btnBearbeiten" mnemonicParsing="false" onAction="#btnBearbeitenAction" prefHeight="25.0" prefWidth="80.0" styleClass="glass-grey" text="Bearbeiten">
                                                          <HBox.margin>
                                                             <Insets left="10.0" />
                                                          </HBox.margin>
                                                       </Button>
-                                                      <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnLoeschenAction" text="Löschen">
+                                                      <Button fx:id="btnDelete" mnemonicParsing="false" onAction="#btnLoeschenAction" prefHeight="25.0" prefWidth="80.0" styleClass="glass-grey" text="Löschen">
                                                          <HBox.margin>
                                                             <Insets left="10.0" />
                                                          </HBox.margin>
